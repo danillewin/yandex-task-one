@@ -1,0 +1,20 @@
+{
+  "name": "yandex-task-one",
+  "version": "1.0.0",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-watch": "^0.6.1"
+  },
+  "description": "no desc",
+  "main": "gruntfile.js",
+  "dependencies": {
+    "grunt": "~0.4.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danillewin/yandex-task-one.git"
+  },
+  "author": "danillewin",
+  "license": "ISC"
+}
