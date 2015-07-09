@@ -1,0 +1,43 @@
+/*да, это жестко*/
+
+.filter {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    z-index: 9;
+}
+
+.filter__text:not(.last-of-type) {
+    margin-right: 30px
+}
+
+.table .filter__label_in{
+    display: none;
+}
+
+.table .filter__label_out {
+    display: none;
+}
+
+.filter__check_in:checked ~ .table .filter__label_in {
+   display: table-row;
+}
+
+.filter__check_out:checked ~ .table  .filter__label_out {
+    display: table-row;
+}
+
+.filter__text{
+    z-index: 9;
+    position: relative;
+}
+
+.filter__check_in {
+    z-index: 9;
+    position: relative;
+}
+
+.filter__check_out {
+    z-index: 9;
+    position: relative;
+}

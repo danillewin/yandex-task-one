@@ -1,0 +1,65 @@
+.table  {
+    display: table;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    position: relative;
+    width: 100%;
+    text-align: left;
+}
+
+
+    .table__row {
+        display: table-row;
+    }
+
+
+    .table__cell {
+        display: table-cell;
+        position: relative;
+        background: #ffffff;
+        padding: 20px 6px;
+    }
+
+        .table__row:nth-child(odd) .table__cell {
+            background: #f0f0f0;
+        }
+
+        .table__cell:hover::after {
+            content: "";
+            position: absolute;
+            background-color: rgba(97,175,255,.4);
+            left: 0;
+            top: -5000px;
+            height: 10000px;
+            width: 100%;
+            z-index: 2;
+        }
+
+        .table__row:hover .table__cell{
+            background: rgba(97,175,255,.4);
+        }
+
+    .table__head-copy {
+        z-index: 1;
+        position: fixed;
+        top: 0;
+    }
+
+    .table__head-cell {
+        height: 40px;
+        display: table-cell;
+        padding: 5px 6px;
+        text-align: left;
+        position: relative;
+        background: #39c;
+        text-transform: uppercase;
+        color: #fff;
+        z-index: 5;
+        letter-spacing: 2px;
+    }
+
+    .table__content {
+        z-index: 3;
+        position: relative;
+        color: #000000;
+    }

@@ -1,0 +1,19 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.g-text-centered {
+    text-align: center;
+}
+
+.l-table {
+    margin-top: 32px;
+}
+
+.g-cheat {
+  background: #fff;
+  height: 50px;
+  width: 100%;
+  z-index: 8;
+  position: absolute;
+}
