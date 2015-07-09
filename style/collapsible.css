@@ -1,0 +1,57 @@
+@media only screen
+    and (min-width: 1280px)  {
+    .collapsible {
+
+    }
+
+        .collapsible__full {
+            display: block;
+        }
+
+        .collapsible__middle {
+            display: none;
+        }
+
+        .collapsible__short {
+            display: none;
+        }
+}
+
+@media only screen
+    and (min-width: 1024px)
+    and (max-width: 1279px) {
+    .collapsible {
+
+    }
+
+        .collapsible__full {
+            display: none;
+        }
+
+        .collapsible__middle {
+            display: block;
+        }
+
+        .collapsible__short {
+            display: none;
+        }
+}
+
+@media only screen
+    and (max-width: 1023px) {
+    .collapsible {
+
+    }
+
+        .collapsible__full {
+            display: none;
+        }
+
+        .collapsible__middle {
+            display: none;
+        }
+
+        .collapsible__short {
+            display: block;
+        }
+}

@@ -17,7 +17,7 @@
         display: table-cell;
         position: relative;
         background: #ffffff;
-        padding: 20px 6px;
+        vertical-align: middle;
     }
 
         .table__row:nth-child(odd) .table__cell {
@@ -40,26 +40,34 @@
         }
 
     .table__head-copy {
-        z-index: 1;
+        z-index: 4;
         position: fixed;
         top: 0;
+        width: 100%;
+        display: table;
     }
 
     .table__head-cell {
-        height: 40px;
-        display: table-cell;
-        padding: 5px 6px;
-        text-align: left;
-        position: relative;
-        background: #39c;
-        text-transform: uppercase;
-        color: #fff;
-        z-index: 5;
-        letter-spacing: 2px;
+          height: 10px;
+          display: table-cell;
+          padding: 15px 6px;
+          text-align: left;
+          position: relative;
+          background: #39c;
+          text-transform: uppercase;
+          color: #fff;
+          z-index: 5;
+          letter-spacing: 3px;
     }
 
     .table__content {
         z-index: 3;
         position: relative;
         color: #000000;
+        padding: 20px 6px;
     }
+
+@media only screen
+    and (min-width: 1280px)  {
+    .table__collapsible
+}

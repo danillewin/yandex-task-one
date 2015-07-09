@@ -7,13 +7,13 @@ body {
 }
 
 .l-table {
-    margin-top: 32px;
+    margin-top: 12px;
 }
 
 .g-cheat {
   background: #fff;
-  height: 50px;
+  height: 52px;
   width: 100%;
-  z-index: 8;
+  z-index: 5;
   position: absolute;
 }
