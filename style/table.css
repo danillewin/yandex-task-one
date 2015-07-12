@@ -10,6 +10,7 @@
 
     .table__row {
         display: table-row;
+        text-decoration: none;
     }
 
 
@@ -36,7 +37,7 @@
         }
 
         .table__row:hover .table__cell{
-            background: rgba(97,175,255,.4);
+            background-color: rgba(97,175,255,.4);
         }
 
     .table__head-copy {
