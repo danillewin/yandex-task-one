@@ -9,10 +9,18 @@
 <body>
     <div class="g-text-centered">
         <div class="g-cheat"></div>
-        <input type="checkbox" checked="checked" class="table-filter__item table-filter__check_in"/>
-        <span class="table-filter__item table-filter__text">Прилет</span>
-        <input type="checkbox" checked="checked" class="table-filter__item table-filter__check_out"/>
-        <span class="table-filter__item table-filter__text">Вылет</span>
+        <input id="arrive" type="checkbox" checked="checked" class="table-filter__check table-filter__check_arrive"/>
+        <label for="arrive" class="table-filter__item table-filter__btn">
+            <i class="icon_arrive_on table-filter__icon table-filter__icon_arrive_on"></i>
+            <i class="icon_arrive_off table-filter__icon table-filter__icon_arrive_off"></i>
+            Прилет
+        </label>
+        <input id="depart" type="checkbox" checked="checked" class="table-filter__check table-filter__check_depart"/>
+        <label for="depart" class="table-filter__item table-filter__btn">
+            <i class="icon_depart_on table-filter__icon table-filter__icon_depart_on"></i>
+            <i class="icon_depart_off table-filter__icon table-filter__icon_depart_off"></i>
+            Вылет
+        </label>
         <div class="table l-table">
             <div class="table__row table__head-copy">
                 <span class="table__head-cell" style="width: 10%">Тип</span>
@@ -34,7 +42,7 @@
                 <span class="table__head-cell" style="width: 10%">Статус</span>
                 <span class="table__head-cell" style="width: 10%">Примечание</span>
             </div>
-            <a href="#modal_001" class="table__row table-filter__label table-filter__label_in">
+            <a href="#modal_001" class="table__row table-filter__row table-filter__row_arrive">
                 <div class="table__cell">
                     <div class="table__content">
                        <div class="collapsible">
@@ -84,7 +92,7 @@
                     <div class="table__content">Doloremque</div>
                 </div>
             </a>
-            <div class="table__row table-filter__label table-filter__label_in">
+            <div class="table__row table-filter__row table-filter__row_arrive">
                 <div class="table__cell">
                     <div class="table__content">
                        <div class="collapsible">
@@ -134,7 +142,7 @@
                     <div class="table__content">Doloremque</div>
                 </div>
             </div>
-            <div class="table__row table-filter__label table-filter__label_in">
+            <div class="table__row table-filter__row table-filter__row_arrive">
                 <div class="table__cell">
                     <div class="table__content">
                        <div class="collapsible">
@@ -184,7 +192,7 @@
                     <div class="table__content">Doloremque</div>
                 </div>
             </div>
-            <div class="table__row table-filter__label table-filter__label_in">
+            <div class="table__row table-filter__row table-filter__row_arrive">
                 <div class="table__cell">
                     <div class="table__content">
                        <div class="collapsible">
@@ -234,7 +242,7 @@
                     <div class="table__content">Doloremque</div>
                 </div>
             </div>
-            <div class="table__row table-filter__label table-filter__label_in">
+            <div class="table__row table-filter__row table-filter__row_arrive">
                 <div class="table__cell">
                     <div class="table__content">
                        <div class="collapsible">
@@ -284,7 +292,7 @@
                     <div class="table__content">Doloremque</div>
                 </div>
             </div>
-            <div class="table__row table-filter__label table-filter__label_in">
+            <div class="table__row table-filter__row table-filter__row_arrive">
                 <div class="table__cell">
                     <div class="table__content">
                        <div class="collapsible">
@@ -334,7 +342,7 @@
                     <div class="table__content">Doloremque</div>
                 </div>
             </div>
-            <div class="table__row table-filter__label table-filter__label_in">
+            <div class="table__row table-filter__row table-filter__row_arrive">
                 <div class="table__cell">
                     <div class="table__content">
                        <div class="collapsible">
@@ -384,7 +392,7 @@
                     <div class="table__content">Doloremque</div>
                 </div>
             </div>
-            <div class="table__row table-filter__label table-filter__label_in">
+            <div class="table__row table-filter__row table-filter__row_arrive">
                 <div class="table__cell">
                     <div class="table__content">
                        <div class="collapsible">
@@ -434,7 +442,7 @@
                     <div class="table__content">Doloremque</div>
                 </div>
             </div>
-            <div class="table__row table-filter__label table-filter__label_in">
+            <div class="table__row table-filter__row table-filter__row_arrive">
                 <div class="table__cell">
                     <div class="table__content">
                        <div class="collapsible">
@@ -484,7 +492,7 @@
                     <div class="table__content">Doloremque</div>
                 </div>
             </div>
-            <div class="table__row table-filter__label table-filter__label_in">
+            <div class="table__row table-filter__row table-filter__row_arrive">
                 <div class="table__cell">
                     <div class="table__content">
                        <div class="collapsible">
@@ -535,7 +543,7 @@
                 </div>
             </div>
 
-            <div class="table__row table-filter__label table-filter__label_out">
+            <div class="table__row table-filter__row table-filter__row_depart">
                 <div class="table__cell">
                     <div class="table__content">
                        <div class="collapsible">
@@ -585,7 +593,7 @@
                     <div class="table__content">Doloremque</div>
                 </div>
             </div>
-            <div class="table__row table-filter__label table-filter__label_out">
+            <div class="table__row table-filter__row table-filter__row_depart">
                 <div class="table__cell">
                     <div class="table__content">
                        <div class="collapsible">
@@ -635,7 +643,7 @@
                     <div class="table__content">Doloremque</div>
                 </div>
             </div>
-            <div class="table__row table-filter__label table-filter__label_out">
+            <div class="table__row table-filter__row table-filter__row_depart">
                 <div class="table__cell">
                     <div class="table__content">
                        <div class="collapsible">
@@ -685,7 +693,7 @@
                     <div class="table__content">Doloremque</div>
                 </div>
             </div>
-            <div class="table__row table-filter__label table-filter__label_out">
+            <div class="table__row table-filter__row table-filter__row_depart">
                 <div class="table__cell">
                     <div class="table__content">
                        <div class="collapsible">
@@ -735,7 +743,7 @@
                     <div class="table__content">Doloremque</div>
                 </div>
             </div>
-            <div class="table__row table-filter__label table-filter__label_out">
+            <div class="table__row table-filter__row table-filter__row_depart">
                 <div class="table__cell">
                     <div class="table__content">
                        <div class="collapsible">
@@ -785,7 +793,7 @@
                     <div class="table__content">Doloremque</div>
                 </div>
             </div>
-            <div class="table__row table-filter__label table-filter__label_out">
+            <div class="table__row table-filter__row table-filter__row_depart">
                 <div class="table__cell">
                     <div class="table__content">
                        <div class="collapsible">
@@ -835,7 +843,7 @@
                     <div class="table__content">Doloremque</div>
                 </div>
             </div>
-            <div class="table__row table-filter__label table-filter__label_out">
+            <div class="table__row table-filter__row table-filter__row_depart">
                 <div class="table__cell">
                     <div class="table__content">
                        <div class="collapsible">
@@ -885,7 +893,7 @@
                     <div class="table__content">Doloremque</div>
                 </div>
             </div>
-            <div class="table__row table-filter__label table-filter__label_out">
+            <div class="table__row table-filter__row table-filter__row_depart">
                 <div class="table__cell">
                     <div class="table__content">
                        <div class="collapsible">
@@ -935,7 +943,7 @@
                     <div class="table__content">Doloremque</div>
                 </div>
             </div>
-            <div class="table__row table-filter__label table-filter__label_out">
+            <div class="table__row table-filter__row table-filter__row_depart">
                 <div class="table__cell">
                     <div class="table__content">
                        <div class="collapsible">
@@ -985,7 +993,7 @@
                     <div class="table__content">Doloremque</div>
                 </div>
             </div>
-            <div class="table__row table-filter__label table-filter__label_out">
+            <div class="table__row table-filter__row table-filter__row_depart">
                 <div class="table__cell">
                     <div class="table__content">
                        <div class="collapsible">
@@ -1037,7 +1045,7 @@
             </div>
         </div>
     </div>
-    <div class="modal" id="modal_001">
+    <div class="modal" id="modal_001" tabindex="-1" role="dialog">
         <div class="modal__body">
             <div class="modal__header">
                 Инофрмация о рейсе 001

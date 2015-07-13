@@ -1,0 +1,26 @@
+[class^="icon_"], [class*=" icon_"] {
+  height: 20px;
+  width: 24px;
+  display: inline-block;
+  line-height: 14px;
+  vertical-align: text-top;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(images/icon.png)
+}
+
+.icon_arrive_off {
+    background-position: -24px -19px;
+}
+
+.icon_depart_off {
+    background-position: 0px -19px;
+}
+
+.icon_arrive_on {
+    background-position: -24px 0;
+}
+
+.icon_depart_on {
+    background-position: 0px 0;
+}

@@ -11,6 +11,7 @@
     .table__row {
         display: table-row;
         text-decoration: none;
+        position: relative;
     }
 
 
@@ -66,6 +67,14 @@
         position: relative;
         color: #000000;
         padding: 20px 6px;
+    }
+
+    .table__link {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
     }
 
 @media only screen

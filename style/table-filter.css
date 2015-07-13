@@ -7,24 +7,71 @@
     z-index: 5;
 }
 
+.table-filter__check {
+    display: none;
+}
+
 .table-filter__text:not(.last-of-type) {
     margin-right: 30px
 }
 
-.table .table-filter__label {
+.table .table-filter__row {
     display: none;
 }
 
-.table-filter__check_in:checked ~ .table .table-filter__label_in {
+.table-filter__check_arrive:checked ~ .table .table-filter__row_arrive {
    display: table-row;
 }
 
-.table-filter__check_out:checked ~ .table  .table-filter__label_out {
+.table-filter__check_depart:checked ~ .table  .table-filter__row_depart {
     display: table-row;
 }
 
 .table-filter__item {
     z-index:5;
     position: relative;
-    margin-top: 20px;
+    margin-top: 11px;
+}
+
+.table-filter__btn {
+    color: #39c;
+    background-color: #ffffff;
+    padding: 6px 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    cursor: pointer;
+    border: 1px solid #39c;
+    width: 150px;
+    display: inline-block;
+}
+
+.table-filter__check:checked + .table-filter__btn {
+    background-color: #39c;
+    color: #fff;
+}
+
+.table-filter__icon {
+    display: none;
+    margin-right: 12px;
+}
+
+.table-filter__icon_arrive_off,
+.table-filter__icon_depart_off {
+    display: inline-block;
+}
+
+.table-filter__check_arrive:checked ~ .table-filter__btn .table-filter__icon_arrive_on {
+    display: inline-block;
+}
+
+.table-filter__check_depart:checked ~ .table-filter__btn .table-filter__icon_depart_on {
+    display: inline-block;
+}
+
+.table-filter__check_arrive:checked ~ .table-filter__btn .table-filter__icon_arrive_off {
+    display: none;
+}
+
+.table-filter__check_depart:checked ~ .table-filter__btn .table-filter__icon_depart_off {
+    display: none;
 }

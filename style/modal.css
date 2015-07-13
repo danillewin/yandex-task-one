@@ -5,7 +5,8 @@
     position: fixed;
     transform: translate(-100%,-100%);
     z-index: 999;
-    top: 50%;
+    top: 10%;
+    opacity: 0;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 999;
@@ -27,6 +28,12 @@
 
 .modal:target {
     display: block;
+}
+
+.modal:target .modal__body {
+    opacity: 1;
+    top: 50%;
+    transition: opacity .3s ease;
 }
 
 .modal__header {
