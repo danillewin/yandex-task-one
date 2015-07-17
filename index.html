@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Yandex, task one</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.min.css"/>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="g-text-centered">
+        <div class="g-cheat"></div>
+        <input id="arrive" type="checkbox" checked="checked" class="table-filter__check table-filter__check_arrive"/>
+        <label for="arrive" class="table-filter__item table-filter__btn">
+            <i class="icon_arrive_on table-filter__icon table-filter__icon_arrive_on"></i>
+            <i class="icon_arrive_off table-filter__icon table-filter__icon_arrive_off"></i>
+            Прилет
+        </label>
+        <input id="depart" type="checkbox" checked="checked" class="table-filter__check table-filter__check_depart"/>
+        <label for="depart" class="table-filter__item table-filter__btn">
+            <i class="icon_depart_on table-filter__icon table-filter__icon_depart_on"></i>
+            <i class="icon_depart_off table-filter__icon table-filter__icon_depart_off"></i>
+            Вылет
+        </label>
+        <div class="table l-table">
+            <div class="table__row table__head-copy">
+                <span class="table__head-cell" style="width: 10%">Тип</span>
+                <span class="table__head-cell" style="width: 10%">Номер</span>
+                <span class="table__head-cell" style="width: 15%">Авиакомпания</span>
+                <span class="table__head-cell" style="width: 15%">Тип судна</span>
+                <span class="table__head-cell" style="width: 20%">Аэропорт назначения</span>
+                <span class="table__head-cell" style="width: 10%">Вылет/Прилет</span>
+                <span class="table__head-cell" style="width: 10%">Статус</span>
+                <span class="table__head-cell" style="width: 10%">Примечание</span>
+            </div>
+            <div class="table__row table__head">
+                <span class="table__head-cell" style="width: 10%">Тип</span>
+                <span class="table__head-cell" style="width: 10%">Номер</span>
+                <span class="table__head-cell" style="width: 15%">Авиакомпания</span>
+                <span class="table__head-cell" style="width: 15%">Тип судна</span>
+                <span class="table__head-cell" style="width: 20%">Аэропорт назначения</span>
+                <span class="table__head-cell" style="width: 10%">Вылет/Прилет</span>
+                <span class="table__head-cell" style="width: 10%">Статус</span>
+                <span class="table__head-cell" style="width: 10%">Примечание</span>
+            </div>
+            <a href="#modal_001" class="table__row table-filter__row table-filter__row_arrive">
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">001</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full">1</span>
+                           <span class="collapsible__middle">2</span>
+                           <span class="collapsible__short">3</span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                        <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Consequatur</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Necessitatibus</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Doloremque</div>
+                </div>
+            </a>
+            <div class="table__row table-filter__row table-filter__row_arrive">
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">001</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                        <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Consequatur</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Necessitatibus</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Doloremque</div>
+                </div>
+            </div>
+            <div class="table__row table-filter__row table-filter__row_arrive">
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">001</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                        <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Consequatur</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Necessitatibus</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Doloremque</div>
+                </div>
+            </div>
+            <div class="table__row table-filter__row table-filter__row_arrive">
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">001</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                        <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Consequatur</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Necessitatibus</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Doloremque</div>
+                </div>
+            </div>
+            <div class="table__row table-filter__row table-filter__row_arrive">
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">001</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                        <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Consequatur</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Necessitatibus</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Doloremque</div>
+                </div>
+            </div>
+            <div class="table__row table-filter__row table-filter__row_arrive">
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">001</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                        <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Consequatur</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Necessitatibus</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Doloremque</div>
+                </div>
+            </div>
+            <div class="table__row table-filter__row table-filter__row_arrive">
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">001</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                        <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Consequatur</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Necessitatibus</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Doloremque</div>
+                </div>
+            </div>
+            <div class="table__row table-filter__row table-filter__row_arrive">
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">001</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                        <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Consequatur</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Necessitatibus</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Doloremque</div>
+                </div>
+            </div>
+            <div class="table__row table-filter__row table-filter__row_arrive">
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">001</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                        <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Consequatur</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Necessitatibus</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Doloremque</div>
+                </div>
+            </div>
+            <div class="table__row table-filter__row table-filter__row_arrive">
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">001</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                        <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Consequatur</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Necessitatibus</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Doloremque</div>
+                </div>
+            </div>
+
+            <div class="table__row table-filter__row table-filter__row_depart">
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">001</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                        <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Consequatur</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Necessitatibus</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Doloremque</div>
+                </div>
+            </div>
+            <div class="table__row table-filter__row table-filter__row_depart">
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">001</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                        <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Consequatur</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Necessitatibus</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Doloremque</div>
+                </div>
+            </div>
+            <div class="table__row table-filter__row table-filter__row_depart">
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">001</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                        <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Consequatur</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Necessitatibus</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Doloremque</div>
+                </div>
+            </div>
+            <div class="table__row table-filter__row table-filter__row_depart">
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">001</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                        <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Consequatur</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Necessitatibus</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Doloremque</div>
+                </div>
+            </div>
+            <div class="table__row table-filter__row table-filter__row_depart">
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">001</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                        <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Consequatur</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Necessitatibus</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Doloremque</div>
+                </div>
+            </div>
+            <div class="table__row table-filter__row table-filter__row_depart">
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">001</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                        <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Consequatur</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Necessitatibus</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Doloremque</div>
+                </div>
+            </div>
+            <div class="table__row table-filter__row table-filter__row_depart">
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">001</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                        <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Consequatur</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Necessitatibus</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Doloremque</div>
+                </div>
+            </div>
+            <div class="table__row table-filter__row table-filter__row_depart">
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">001</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                        <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Consequatur</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Necessitatibus</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Doloremque</div>
+                </div>
+            </div>
+            <div class="table__row table-filter__row table-filter__row_depart">
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">001</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                        <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Consequatur</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Necessitatibus</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Doloremque</div>
+                </div>
+            </div>
+            <div class="table__row table-filter__row table-filter__row_depart">
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">001</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                        <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">
+                       <div class="collapsible">
+                           <span class="collapsible__full"></span>
+                           <span class="collapsible__middle"></span>
+                           <span class="collapsible__short"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Consequatur</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Necessitatibus</div>
+                </div>
+                <div class="table__cell">
+                    <div class="table__content">Doloremque</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_001" tabindex="-1" role="dialog">
+        <div class="modal__body">
+            <div class="modal__header">
+                Инофрмация о рейсе 001
+                <a href="#close" class="modal__close">×</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
