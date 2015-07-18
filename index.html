@@ -45,8 +45,8 @@
                         <span class="collapsible__middle">Аэропорт</span>
                         <span class="collapsible__short">Аэропорт</span>
                     </span>
-                    <span class="table__head-cell" style="width: 20%">Вылет/Прилет</span>
-                    <span class="table__head-cell" style="width: 10%">Статус</span>
+                    <span class="table__head-cell" style="width: 15%">Вылет/Прилет</span>
+                    <span class="table__head-cell" style="width: 15%">Статус</span>
                     <span class="table__head-cell collapsible__full" style="width: 15%">Примечание</span>
                 </div>
             </div>
@@ -72,8 +72,8 @@
                     <span class="collapsible__middle">Аэропорт</span>
                     <span class="collapsible__short">Аэропорт</span>
                 </span>
-                <span class="table__head-cell" style="width: 20%">Вылет/Прилет</span>
-                <span class="table__head-cell" style="width: 10%">Статус</span>
+                <span class="table__head-cell" style="width: 15%">Вылет/Прилет</span>
+                <span class="table__head-cell" style="width: 15%">Статус</span>
                 <span class="table__head-cell collapsible__full" style="width: 15%">Примечание</span>
             </div>
             <!-- ko foreach: flights -->
@@ -83,7 +83,7 @@
                            <span class="collapsible__full" data-bind="text: typeText"></span>
                            <span class="collapsible__middle" data-bind="text: typeText"></span>
                            <span class="collapsible__short">
-                               <i data-bind="attr: { class: 'icon_' + type + '_off'}"></i>
+                               <i data-bind="attr: { class: 'icon_' + type + '_off', title: typeText}"></i>
                            </span>
                         </div>
                     </div>
@@ -98,10 +98,10 @@
                                    <span data-bind="text: airline"></span>
                                </span>
                                <span class="collapsible__middle">
-                                   <img data-bind="attr: { 'src' : airlineLogo }"/> 
+                                   <img data-bind="attr: { 'src' : airlineLogo, title : airline }"/>
                                </span>
                                <span class="collapsible__short">
-                                   <img data-bind="attr: { 'src' : airlineLogo }"/> 
+                                   <img data-bind="attr: { 'src' : airlineLogo, title : airline }"/>
                                </span>
                            </div>
                         </div>
@@ -111,7 +111,7 @@
                             <div class="collapsible">
                                <span class="collapsible__full" data-bind="text: plane"></span>
                                <span class="collapsible__middle" data-bind="text: plane"></span>
-                               <span class="collapsible__short" data-bind="text: planeShort"></span>
+                               <span class="collapsible__short" data-bind="text: planeShort, attr: { title : plane}"></span>
                             </div>
                         </div>
                     </div>
@@ -125,16 +125,16 @@
                                    <span data-bind="text: airport"></span>
                                </span>
                                <span class="collapsible__short">
-                                   <span data-bind="text: airportShort"></span>
+                                   <span data-bind="text: airportShort, attr: { title : airport }"></span>
                                </span>
                            </div>
                         </div>
                     </div>
                     <div class="table__cell">
-                        <div class="table__content">Co</div>
+                        <div class="table__content" data-bind="text: departTime + ' - ' + arriveTime"></div>
                     </div>
                     <div class="table__cell">
-                        <div class="table__content">Ne</div>
+                        <div class="table__content" data-bind="text: status"></div>
                     </div>
                     <div class="table__cell  collapsible__full">
                         <div class="table__content" data-bind="text: about"></div>
