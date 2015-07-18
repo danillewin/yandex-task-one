@@ -1,7 +1,6 @@
 .table  {
     display: table;
     overflow: hidden;
-    border: 1px solid #ccc;
     position: relative;
     width: 100%;
     text-align: left;
@@ -47,6 +46,7 @@
     }
 
     .table__head-cell {
+        white-space: nowrap;
           height: 10px;
           display: table-cell;
           padding: 15px 6px;
