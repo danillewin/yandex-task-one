@@ -17,3 +17,11 @@ body {
   z-index: 5;
   position: absolute;
 }
+
+.g-centered-text {
+    text-align: center;
+}
+
+.g-left-text {
+    text-align: left;
+}

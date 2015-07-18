@@ -3,6 +3,7 @@
     overflow: hidden;
     position: relative;
     width: 100%;
+    min-width: 700px;
     text-align: left;
     background-image: url(images/table-back.png); /*В комментариях к pure css решению этот ужас разобран подробно :( */
     background-position: 0 -10px;
@@ -15,11 +16,12 @@
         position: relative;
     }
 
-
     .table__cell {
         display: table-cell;
         position: relative;
         vertical-align: middle;
+        text-align: center;
+        height: 56px;
     }
 
         .table__cell:hover::after {
@@ -33,7 +35,7 @@
             z-index: 2;
         }
 
-        .table__row:hover .table__cell{
+        .table__row:hover .table__cell {
             background-color: rgba(97,175,255,.4);
         }
 
@@ -42,28 +44,28 @@
         position: fixed;
         top: 0;
         width: 100%;
+        min-width: 700px;
         display: table;
     }
 
     .table__head-cell {
         white-space: nowrap;
-          height: 10px;
-          display: table-cell;
-          padding: 15px 6px;
-          text-align: left;
-          position: relative;
-          background: #39c;
-          text-transform: uppercase;
-          color: #fff;
-          z-index: 5;
-          letter-spacing: 3px;
+        height: 46px;
+        display: table-cell;
+        vertical-align: middle;
+        position: relative;
+        background: #39c;
+        text-transform: uppercase;
+        color: #fff;
+        z-index: 5;
+        letter-spacing: 3px;
+        text-align: center;
     }
 
     .table__content {
         z-index: 3;
         position: relative;
         color: #000000;
-        padding: 20px 6px;
     }
 
     .table__link {
@@ -75,10 +77,5 @@
     }
 
 .table img {
-    height: 10px;
-}
-
-@media only screen
-    and (min-width: 1280px)  {
-    .table__collapsible
+    height: 13px;
 }
