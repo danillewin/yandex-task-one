@@ -134,7 +134,7 @@
                         <div class="table__content" data-bind="text: departTime + ' - ' + arriveTime"></div>
                     </div>
                     <div class="table__cell">
-                        <div class="table__content" data-bind="text: status"></div>
+                        <div class="table__content" data-bind="text: status + ' ' + delayedToTime"></div>
                     </div>
                     <div class="table__cell  collapsible__full">
                         <div class="table__content" data-bind="text: about"></div>
@@ -149,6 +149,43 @@
                 <div class="modal__header">
                     Инофрмация о рейсе <span data-bind="text: number"></span>
                     <a href="#close" class="modal__close">×</a>
+                </div>
+                <div class="modal__content flight-details">
+                    <div class="flight-details__row">
+                        <span class="flight-details__title">тип рейса</span>
+                        <span class="flight-details__value" data-bind="text: typeText"></span>
+                    </div>
+                    <div class="flight-details__row">
+                        <span class="flight-details__title">номер рейса</span>
+                        <span class="flight-details__value" data-bind="text: number"></span>
+                    </div>
+                    <div class="flight-details__row">
+                        <span class="flight-details__title">авиа компания</span>
+                        <span class="flight-details__value" data-bind="text: airline"></span>
+                    </div>
+                    <div class="flight-details__row">
+                        <span class="flight-details__title">тип судна</span>
+                        <span class="flight-details__value" data-bind="text: plane"></span>
+                    </div>
+                    <div class="flight-details__row">
+                        <span class="flight-details__title">аэропорт назначения</span>
+                        <span class="flight-details__value" data-bind="text: airport"></span>
+                    </div>
+                    <div class="flight-details__row">
+                        <span class="flight-details__title">время вылета / время прилета</span>
+                        <span class="flight-details__value" data-bind="text: departTime + ' / ' + arriveTime"></span>
+                    </div>
+                    <div class="flight-details__row">
+                        <span class="flight-details__title">статус</span>
+                        <span class="flight-details__value" data-bind="text: status + ' ' + delayedToTime "></span>
+                    </div>
+                    <div class="flight-details__row">
+                        <span class="flight-details__title">примечание</span>
+                        <span class="flight-details__value" data-bind="text: about"></span>
+                    </div>
+                </div>
+                <div class="modal__footer">
+                    Наш аэропорт желает Вам счастливого пути!
                 </div>
             </div>
         </div>

@@ -1,0 +1,25 @@
+.flight-details {
+}
+
+    .flight-details__title {
+        float: left;
+        color: #39c;
+        text-transform: uppercase;
+    }
+
+    .flight-details__value {
+        float: right;
+        text-transform: uppercase;
+    }
+
+    .flight-details__row {
+        margin-bottom: 25px;
+    }
+
+    .flight-details__row:after {
+        content: " ";
+        visibility: hidden;
+        display: block;
+        height: 0;
+        clear: both;
+    }

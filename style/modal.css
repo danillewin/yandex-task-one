@@ -1,6 +1,5 @@
 .modal__body {
     width: 511px;
-    height: 397px;
     background: #fff;
     position: fixed;
     transform: translate(-100%,-100%);
@@ -36,11 +35,21 @@
     transition: opacity .3s ease;
 }
 
+.modal__content {
+    padding: 20px 20px 0 20px;
+}
+
 .modal__header {
     background-color: #39c;
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 3px;
+    text-align: center;
+    padding: 20px;
+}
+
+.modal__footer {
+    text-transform: uppercase;
     text-align: center;
     padding: 20px;
 }

@@ -14,19 +14,20 @@
 
     app.Flights.prototype.fetch = function (n) {
         var self = this,
-            randomAirlineId,
-            randomPlaneId,
-            randomAirportId,
-            randomTypeId,
-            randomDepartMinutes,
-            randomArriveMinutes,
-            randomDelayedArriveMinutes,
+            airlineId,
+            planeId,
+            airportId,
+            typeId,
+            departMinutes,
+            arriveMinutes,
+            delayedArriveMinutes,
             departTimeHours,
             departTimeMinutes,
             arriveTimeHours,
             arriveTimeMinutes,
             delayedArriveTimeHours,
             delayedArriveTimeMinutes,
+            statusId,
             i,
             flights = [];
 
@@ -34,34 +35,36 @@
         for (i = 0; i < n; i++) {
             var flight = {};
 
-            randomAirlineId = app.getRandomInt(0, 3);
-            randomPlaneId = app.getRandomInt(0, 3);
-            randomAirportId = app.getRandomInt(0, 3);
-            randomTypeId = app.getRandomInt(0, 1);
-            randomDepartMinutes = app.getRandomInt(0, 1440);
-            randomArriveMinutes = app.getRandomInt(0, 1440);
-            randomDelayedArriveMinutes = (app.getRandomInt(0, 1440) + app.getRandomInt(0, 360)) % 1440;
-            departTimeHours = ("0" +Math.floor(randomDepartMinutes / 60)).slice(-2);
-            departTimeMinutes = ("0" +randomDepartMinutes % 60).slice(-2);
-            arriveTimeHours = ("0" +Math.floor(randomArriveMinutes / 60)).slice(-2);
-            arriveTimeMinutes = ("0" +randomArriveMinutes % 60).slice(-2);
-            delayedArriveTimeHours = ("0" +Math.floor(randomDelayedArriveMinutes / 60)).slice(-2);
-            delayedArriveTimeMinutes = ("0" +randomDelayedArriveMinutes % 60).slice(-2);
+            airlineId = app.getRandomInt(0, 3);
+            planeId = app.getRandomInt(0, 3);
+            airportId = app.getRandomInt(0, 3);
+            typeId = app.getRandomInt(0, 1);
+            statusId = typeId ? app.getRandomInt(0, 5) : app.getRandomInt(0, 4);
 
-            flight.type = randomTypeId ? "arrive" : "depart";
-            flight.typeText = randomTypeId ? "Прилет" : "Вылет";
+            departMinutes = app.getRandomInt(0, 1440);
+            arriveMinutes = app.getRandomInt(0, 1440);
+            delayedArriveMinutes = (app.getRandomInt(0, 1440) + app.getRandomInt(0, 360)) % 1440;
+            departTimeHours = ("0" + Math.floor(departMinutes / 60)).slice(-2);
+            departTimeMinutes = ("0" + departMinutes % 60).slice(-2);
+            arriveTimeHours = ("0" + Math.floor(arriveMinutes / 60)).slice(-2);
+            arriveTimeMinutes = ("0" + arriveMinutes % 60).slice(-2);
+            delayedArriveTimeHours = ("0" + Math.floor(delayedArriveMinutes / 60)).slice(-2);
+            delayedArriveTimeMinutes = ("0" + delayedArriveMinutes % 60).slice(-2);
+
+            flight.type = typeId ? "arrive" : "depart";
+            flight.typeText = typeId ? "Прилет" : "Вылет";
             flight.number = app.getRandomInt(100, 600);
-            flight.airline = self.airlines[randomAirlineId];
-            flight.plane = self.planes[randomPlaneId];
-            flight.airport = self.airports[randomAirportId];
-            flight.status = randomTypeId ? self.statusArrive[app.getRandomInt(0, 5)] : self.statusDepart[app.getRandomInt(0, 4)];
+            flight.airline = self.airlines[airlineId];
+            flight.plane = self.planes[planeId];
+            flight.airport = self.airports[airportId];
+            flight.status = typeId ? self.statusArrive[statusId] : self.statusDepart[statusId];
             flight.about = self.about[app.getRandomInt(0, 2)];
-            flight.airportShort = self.airportsShort[randomAirportId];
-            flight.planeShort = self.planesShort[randomPlaneId];
+            flight.airportShort = self.airportsShort[airportId];
+            flight.planeShort = self.planesShort[planeId];
             flight.airlineLogo = "images/" + flight.airline + ".png";
             flight.arriveTime = arriveTimeHours + ":" + arriveTimeMinutes;
             flight.departTime = departTimeHours + ":" + departTimeMinutes;
-            flight.delayedToTime = "00" + ":" + "00";
+            flight.delayedToTime = statusId === 0 ? delayedArriveTimeHours + ":" + delayedArriveTimeMinutes : "";
 
             flights.push(flight);
         }
