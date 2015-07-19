@@ -1,12 +1,16 @@
 [class^="icon_"], [class*=" icon_"] {
-  height: 16px;
-  width: 18px;
   display: inline-block;
-  line-height: 14px;
+
+  width: 18px;
+  height: 16px;
+
   vertical-align: middle;
-  background-position: center;
+
+  background-image: url(images/icon.png);
   background-repeat: no-repeat;
-  background-image: url(images/icon.png)
+  background-position: center;
+
+  line-height: 14px;
 }
 
 .icon_arrive_off {
@@ -14,7 +18,7 @@
 }
 
 .icon_depart_off {
-    background-position: 0px -16px;
+    background-position: 0 -16px;
 }
 
 .icon_arrive_on {
@@ -22,5 +26,5 @@
 }
 
 .icon_depart_on {
-    background-position: 0px 0;
+    background-position: 0 0;
 }

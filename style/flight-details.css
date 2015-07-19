@@ -1,14 +1,16 @@
-.flight-details {
-}
+
 
     .flight-details__title {
         float: left;
-        color: #39c;
+
         text-transform: uppercase;
+
+        color: #3399cc;
     }
 
     .flight-details__value {
         float: right;
+
         text-transform: uppercase;
     }
 
@@ -17,9 +19,11 @@
     }
 
     .flight-details__row:after {
-        content: " ";
-        visibility: hidden;
         display: block;
-        height: 0;
+        visibility: hidden;
         clear: both;
+
+        height: 0;
+
+        content: " ";
     }
