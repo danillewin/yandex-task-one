@@ -5,8 +5,8 @@
 
     app.Flights.prototype.airlines = ["Gazprom", "Transaero", "Turkish Airlines", "Utair"];
     app.Flights.prototype.planes = ["Boeing 747", "Airbus A350", "Sukhov SU-27", "Antonov AN-158"];
-    app.Flights.prototype.airports = ["Vnukovo, Moscow", "O'Hara, Chicago", "Heathrow, London", "Haneda, Tokyo"];
-    app.Flights.prototype.airportsShort = ["VNK, MOW", "OHR, CHI", "HTR, LON", "HND, TYO"];
+    app.Flights.prototype.airports = ["Vnukovo, Moscow", "O'Hare, Chicago", "Heathrow, London", "Haneda, Tokyo"];
+    app.Flights.prototype.airportsShort = ["VKO, MOW", "OHR, CHI", "HTR, LON", "HND, TYO"];
     app.Flights.prototype.planesShort = ["B747", "A350", "SU27", "AN158"];
     app.Flights.prototype.about = ["#1445", "#1123", "#5370"];
     app.Flights.prototype.statusArrive = ["Задерживается до ", "Регистрация", "Ожидание посадки", "Посадка закончена", "Вылетел", "Отменен"];

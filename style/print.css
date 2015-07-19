@@ -1,0 +1,38 @@
+@media print {
+        .collapsible__full {
+            display: block;
+        }
+
+        .collapsible__middle {
+            display: none !important;
+        }
+
+        .collapsible__short {
+            display: none !important;
+        }
+
+        label,
+        input {
+            display: none !important;
+        }
+
+        .table__head-cell {
+            font-size: 14px;
+            padding: 0 10px;
+        }
+
+        .table__cell {
+            border-bottom: 1px solid #666;
+        }
+
+        .modal {
+            width: 1500px;
+            height: 1500px;
+        }
+
+        .modal__body {
+            width: 1000px;
+            margin: 0px 250px;
+            font-size: 26px;
+        }
+}
