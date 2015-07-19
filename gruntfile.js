@@ -8,6 +8,17 @@ module.exports = function(grunt) {
                 }
             }
         },
+        csscomb: {
+            options: {
+                config: '.csscomb.json'
+            },
+            files: {
+                expand: true,
+                cwd: 'style',
+                src: ['*.css'],
+                dest: 'style',
+            }
+        },
         uglify: {
             bundle:{
                 options: {
@@ -38,10 +49,11 @@ module.exports = function(grunt) {
     });
 
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-csscomb');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
-    grunt.registerTask('style', ['cssmin']);
+    grunt.registerTask('style', ['csscomb', 'cssmin']);
     grunt.registerTask('script', ['uglify:bundle']);
     grunt.registerTask('default');
 };
