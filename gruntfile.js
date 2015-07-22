@@ -8,6 +8,31 @@ module.exports = function(grunt) {
                 }
             }
         },
+        imagemin: {
+           dist: {
+              options: {
+                optimizationLevel: 5
+              },
+              files: [{
+                 expand: true,
+                 cwd: 'images/',
+                 src: ['**/*.{png,jpg,gif}'],
+                 dest: 'images/'
+              }]
+           }
+        },
+        'gh-pages': {
+            options: {
+              message: 'Auto-generated commit'
+            },
+            src: [
+                'index.html',
+                'style.min.css',
+                'script.min.js',
+                'script/lib/*.js',
+                'images/*.png'
+            ]
+        },
         csscomb: {
             options: {
                 config: '.csscomb.json'
@@ -52,8 +77,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-csscomb');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-gh-pages');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
 
     grunt.registerTask('style', ['csscomb', 'cssmin']);
     grunt.registerTask('script', ['uglify:bundle']);
-    grunt.registerTask('default');
+    grunt.registerTask('release', ['grunt-contrib-imagemin', 'gh-pages']);
 };
