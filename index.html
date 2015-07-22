@@ -31,22 +31,22 @@
                         <span class="collapsible__middle">№</span>
                         <span class="collapsible__short">№</span>
                     </span>
-                    <span class="table__head-cell" style="width: 15%">
+                    <span class="table__head-cell collapsible__mobile" style="width: 15%">
                         <span class="collapsible__full" >Авиакомпания</span>
                         <span class="collapsible__middle">Компания</span>
                         <span class="collapsible__short">Компания</span></span>
-                    <span class="table__head-cell" style="width: 10%">                    
+                    <span class="table__head-cell collapsible__mobile" style="width: 10%">
                         <span class="collapsible__full" >Тип судна</span>
                         <span class="collapsible__middle">Судно</span>
                         <span class="collapsible__short">Судно</span>
                     </span>
-                    <span class="table__head-cell" style="width: 10%">
+                    <span class="table__head-cell collapsible__mobile" style="width: 10%">
                         <span class="collapsible__full" >Аэропорт назначения</span>
                         <span class="collapsible__middle">Аэропорт</span>
                         <span class="collapsible__short">Аэропорт</span>
                     </span>
                     <span class="table__head-cell" style="width: 15%">Вылет/Прилет</span>
-                    <span class="table__head-cell" style="width: 15%">Статус</span>
+                    <span class="table__head-cell" style="width: 19%">Статус</span>
                     <span class="table__head-cell collapsible__full" style="width: 15%">Примечание</span>
                 </div>
             </div>
@@ -58,22 +58,22 @@
                     <span class="collapsible__middle">№</span>
                     <span class="collapsible__short">№</span>
                 </span>
-                <span class="table__head-cell" style="width: 15%">                    
+                <span class="table__head-cell collapsible__mobile" style="width: 15%">
                     <span class="collapsible__full" >Авиакомпания</span>
                     <span class="collapsible__middle">Компания</span>
                     <span class="collapsible__short">Компания</span></span>
-                <span class="table__head-cell" style="width: 10%">
+                <span class="table__head-cell collapsible__mobile" style="width: 10%">
                     <span class="collapsible__full" >Тип судна</span>
                     <span class="collapsible__middle">Судно</span>
                     <span class="collapsible__short">Судно</span>
                 </span>
-                <span class="table__head-cell" style="width: 10%">
+                <span class="table__head-cell collapsible__mobile" style="width: 10%">
                     <span class="collapsible__full" >Аэропорт назначения</span>
                     <span class="collapsible__middle">Аэропорт</span>
                     <span class="collapsible__short">Аэропорт</span>
                 </span>
                 <span class="table__head-cell" style="width: 15%">Вылет/Прилет</span>
-                <span class="table__head-cell" style="width: 15%">Статус</span>
+                <span class="table__head-cell" style="width: 19%">Статус</span>
                 <span class="table__head-cell collapsible__full" style="width: 15%">Примечание</span>
             </div>
             <!-- ko foreach: flights -->
@@ -90,23 +90,23 @@
                     <div class="table__cell">
                         <div class="table__content" data-bind="text: number"></div>
                     </div>
-                    <div class="table__cell">
+                    <div class="table__cell collapsible__mobile">
                         <div class="table__content">
                            <div class="collapsible">
                                <span class="collapsible__full g-left-text">
-                                   <img data-bind="attr: { 'src' : airlineLogo }"/> 
+                                   <img class="table__img" data-bind="attr: { 'src' : airlineLogo }"/>
                                    <span data-bind="text: airline"></span>
                                </span>
                                <span class="collapsible__middle">
-                                   <img data-bind="attr: { 'src' : airlineLogo, title : airline }"/>
+                                   <img class="table__img" data-bind="attr: { 'src' : airlineLogo, title : airline }"/>
                                </span>
                                <span class="collapsible__short">
-                                   <img data-bind="attr: { 'src' : airlineLogo, title : airline }"/>
+                                   <img class="table__img" data-bind="attr: { 'src' : airlineLogo, title : airline }"/>
                                </span>
                            </div>
                         </div>
                     </div>
-                    <div class="table__cell">
+                    <div class="table__cell collapsible__mobile">
                         <div class="table__content">
                             <div class="collapsible">
                                <span class="collapsible__full" data-bind="text: plane"></span>
@@ -115,7 +115,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="table__cell">
+                    <div class="table__cell collapsible__mobile">
                         <div class="table__content">
                            <div class="collapsible">
                                <span class="collapsible__full">
@@ -145,6 +145,7 @@
     </div>
     <div class="modals" data-bind="foreach: flights">
         <div class="modal" tabindex="-1" role="dialog" data-bind="attr: { 'id' : 'modal_' + number }">
+           <a class="modal__backdrop" href="#close"></a>
             <div class="modal__body">
                 <div class="modal__header">
                     Инофрмация о рейсе <span data-bind="text: number"></span>
