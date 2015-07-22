@@ -82,5 +82,5 @@ module.exports = function(grunt) {
 
     grunt.registerTask('style', ['csscomb', 'cssmin']);
     grunt.registerTask('script', ['uglify:bundle']);
-    grunt.registerTask('release', ['grunt-contrib-imagemin', 'gh-pages']);
+    grunt.registerTask('release', ['imagemin', 'gh-pages']);
 };
