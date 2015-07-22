@@ -145,6 +145,7 @@
     </div>
     <div class="modals" data-bind="foreach: flights">
         <div class="modal" tabindex="-1" role="dialog" data-bind="attr: { 'id' : 'modal_' + number }">
+           <a class="modal__backdrop" href="#close"></a>
             <div class="modal__body">
                 <div class="modal__header">
                     Инофрмация о рейсе <span data-bind="text: number"></span>

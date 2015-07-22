@@ -48,11 +48,11 @@
 
             content: "";
 
-            background-color: rgba(97,175,255,0.4);
+            background-color: rgba(97,175,255,0.3);
         }
 
         .table__row:hover .table__cell {
-            background-color: rgba(97,175,255,0.4);
+            background-color: rgba(97,175,255,0.3);
         }
 
     .table__head-copy {

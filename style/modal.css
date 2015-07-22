@@ -1,24 +1,4 @@
-.modal__body {
-    position: fixed;
-    z-index: 999;
-    z-index: 999;
-    top: 10%;
-    left: 50%;
-
-    width: 511px;
-
-    cursor: default;
-    -webkit-transform: translate(-50%, -50%);
-       -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-         -o-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-
-    opacity: 0;
-    background: #ffffff;
-}
-
-.modal {
+.modal{
     position: fixed;
     z-index: 998;
     top: 0;
@@ -34,49 +14,80 @@
     background-color: rgba(0,0,0,0.7);
 }
 
-.modal:target {
-    display: block;
-}
+    .modal:target {
+        display: block;
+    }
 
-.modal:target .modal__body {
-    top: 50%;
 
-    transition: opacity 0.3s ease;
+    .modal__body {
+        position: fixed;
+        z-index: 999;
+        z-index: 999;
+        top: 10%;
+        left: 50%;
 
-    opacity: 1;
-}
+        width: 511px;
 
-.modal__content {
-    padding: 20px 20px 0 20px;
-}
+        cursor: default;
+        -webkit-transform: translate(-50%, -50%);
+           -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+             -o-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
 
-.modal__header {
-    padding: 20px;
+        opacity: 0;
+        background: #ffffff;
+    }
 
-    text-align: center;
-    letter-spacing: 3px;
-    text-transform: uppercase;
+        .modal:target .modal__body {
+            top: 50%;
 
-    color: #ffffff;
-    background-color: #3399cc;
-}
+            transition: opacity 0.3s ease;
 
-.modal__footer {
-    padding: 20px;
+            opacity: 1;
+        }
 
-    text-align: center;
-    text-transform: uppercase;
-}
+    .modal__content {
+        padding: 20px 20px 0 20px;
+    }
 
-.modal__close {
-    float: right;
+    .modal__header {
+        padding: 20px;
 
-    cursor: pointer;
-    text-decoration: none;
+        text-align: center;
+        letter-spacing: 3px;
+        text-transform: uppercase;
 
-    color: #ffffff;
+        color: #ffffff;
+        background-color: #3399cc;
+    }
 
-    font-family: arial;
-    font-size: 30px;
-    line-height: 16px;
-}
+    .modal__footer {
+        padding: 20px;
+
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .modal__close {
+        float: right;
+
+        cursor: pointer;
+        text-decoration: none;
+
+        color: #ffffff;
+
+        font-family: arial;
+        font-size: 30px;
+        line-height: 16px;
+    }
+
+    .modal__backdrop {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        cursor: pointer;
+    }
