@@ -26,7 +26,7 @@
             <div class="table__head-copy">
                 <div class="table__row">
                     <span class="table__head-cell" style="width: 10%">Тип</span>
-                    <span class="table__head-cell" style="width: 10%">
+                    <span class="table__head-cell" style="width: 13%">
                         <span class="collapsible__full" >Номер</span>
                         <span class="collapsible__middle">№</span>
                         <span class="collapsible__short">№</span>
@@ -53,7 +53,7 @@
          
             <div class="table__row table__head">
                 <span class="table__head-cell" style="width: 10%">Тип</span>
-                <span class="table__head-cell" style="width: 10%">
+                <span class="table__head-cell" style="width: 13%">
                     <span class="collapsible__full" >Номер</span>
                     <span class="collapsible__middle">№</span>
                     <span class="collapsible__short">№</span>
@@ -131,7 +131,7 @@
                         </div>
                     </div>
                     <div class="table__cell">
-                        <div class="table__content" data-bind="text: departTime + ' - ' + arriveTime"></div>
+                        <div class="table__content" data-bind="text: departTime + '&#8211' + arriveTime"></div>
                     </div>
                     <div class="table__cell">
                         <div class="table__content" data-bind="text: status + ' ' + delayedToTime"></div>
@@ -148,7 +148,8 @@
            <a class="modal__backdrop" href="#close"></a>
             <div class="modal__body">
                 <div class="modal__header">
-                    Инофрмация о рейсе <span data-bind="text: number"></span>
+                    Инофрмация о рейсе
+                    <span data-bind="text: number"></span>
                     <a href="#close" class="modal__close">×</a>
                 </div>
                 <div class="modal__content flight-details">
@@ -174,7 +175,7 @@
                     </div>
                     <div class="flight-details__row">
                         <span class="flight-details__title">время вылета / время прилета</span>
-                        <span class="flight-details__value" data-bind="text: departTime + ' / ' + arriveTime"></span>
+                        <span class="flight-details__value" data-bind="text: departTime + '&#8211' + arriveTime"></span>
                     </div>
                     <div class="flight-details__row">
                         <span class="flight-details__title">статус</span>
