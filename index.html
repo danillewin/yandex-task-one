@@ -25,7 +25,7 @@
 
             <div class="table__head-copy">
                 <div class="table__row">
-                    <span class="table__head-cell" style="width: 10%">Тип</span>
+                    <span class="table__head-cell" style="width: 5%">Тип</span>
                     <span class="table__head-cell" style="width: 13%">
                         <span class="collapsible__full" >Номер</span>
                         <span class="collapsible__middle">№</span>
@@ -52,7 +52,7 @@
             </div>
          
             <div class="table__row table__head">
-                <span class="table__head-cell" style="width: 10%">Тип</span>
+                <span class="table__head-cell" style="width: 5%">Тип</span>
                 <span class="table__head-cell" style="width: 13%">
                     <span class="collapsible__full" >Номер</span>
                     <span class="collapsible__middle">№</span>
@@ -80,11 +80,7 @@
                 <a class="table__row table-filter__row" data-bind="attr: {'href' : '#modal_' + number}, css: {'table-filter__row_arrive' : type == 'arrive', 'table-filter__row_depart' : type == 'depart'}">
                     <div class="table__cell">
                         <div class="table__content">
-                           <span class="collapsible__full" data-bind="text: typeText"></span>
-                           <span class="collapsible__middle" data-bind="text: typeText"></span>
-                           <span class="collapsible__short">
-                               <i data-bind="attr: { class: 'icon_' + type + '_off', title: typeText}"></i>
-                           </span>
+                           <i data-bind="attr: { class: 'icon_' + type + '_off', title: typeText}"></i>
                         </div>
                     </div>
                     <div class="table__cell">
