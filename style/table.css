@@ -4,11 +4,15 @@
     display: table;
     overflow: hidden;
 
-    width: 100%;
-    min-width: 700px;
+    width: 85%;
+    min-width: 500px;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
 
     text-align: left;
 
+    border: 1px solid #3399cc;
     background-image: url(images/table-back.png); /*В комментариях к pure css решению этот ужас разобран подробно :( */
     background-position: 0 -10px;
 }
@@ -58,8 +62,10 @@
 
         display: table;
 
-        width: 100%;
-        min-width: 700px;
+        width: 85%;
+        min-width: 500px;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .table__head-cell {
@@ -73,7 +79,7 @@
         text-align: center;
         vertical-align: middle;
         white-space: nowrap;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
         text-transform: uppercase;
 
         color: #ffffff;
@@ -95,6 +101,43 @@
         left: 0;
     }
 
-.table img {
+.table__img {
     height: 13px;
+    margin-left: 10px;
+}
+
+
+@media only screen
+    and (min-width: 1024px)
+    and (max-width: 1279px) {
+
+        .table {
+            width: 100%;
+        }
+
+        .table__head-copy {
+            width: 100%;
+        }
+
+        .table__img {
+            height: 20px;
+            margin-left: 0;
+        }
+}
+
+@media only screen
+    and (max-width: 1023px) {
+
+        .table {
+            width: 100%;
+        }
+
+        .table__head-copy {
+            width: 100%;
+        }
+
+        .table__img {
+            height: 20px;
+            margin-left: 0;
+        }
 }

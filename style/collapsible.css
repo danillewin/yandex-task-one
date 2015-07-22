@@ -32,7 +32,8 @@
 }
 
 @media only screen
-    and (max-width: 1023px) {
+    and (max-width: 1023px),
+    and (min-width: 728px){
 
         .collapsible__full {
             display: none !important;
@@ -44,5 +45,25 @@
 
         .collapsible__short {
             display: block;
+        }
+}
+
+@media only screen
+    and (max-width: 728px) {
+
+        .collapsible__full {
+            display: none !important;
+        }
+
+        .collapsible__middle {
+            display: none !important;
+        }
+
+        .collapsible__short {
+            display: block;
+        }
+
+        .collapsible__mobile {
+            display: none !important;
         }
 }
