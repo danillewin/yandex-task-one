@@ -4,6 +4,7 @@
     };
 
     app.Flights.prototype.airlines = ["Gazprom", "Transaero", "Turkish Airlines", "Utair"];
+    app.Flights.prototype.airlinesAbbr = ["GZ", "TR", "TA", "UT"];
     app.Flights.prototype.planes = ["Boeing 747", "Airbus A350", "Sukhov SU-27", "Antonov AN-158"];
     app.Flights.prototype.airports = ["Vnukovo, Moscow", "O'Hare, Chicago", "Heathrow, London", "Haneda, Tokyo"];
     app.Flights.prototype.airportsShort = ["VKO, MOW", "OHR, CHI", "HTR, LON", "HND, TYO"];
@@ -53,7 +54,7 @@
 
             flight.type = typeId ? "arrive" : "depart";
             flight.typeText = typeId ? "Прилет" : "Вылет";
-            flight.number = app.getRandomInt(100, 600);
+            flight.number = self.airlinesAbbr[airlineId] + app.getRandomInt(100, 600);
             flight.airline = self.airlines[airlineId];
             flight.plane = self.planes[planeId];
             flight.airport = self.airports[airportId];
