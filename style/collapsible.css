@@ -295,3 +295,50 @@
             display: none !important;
         }
 }
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
+        .collapsible__full {
+            display: none !important;
+        }
+
+        .collapsible__middle {
+            display: block;
+        }
+
+        .collapsible__short {
+            display: none !important;
+        }
+
+        .collapsible__mobile-hide {
+            display: none !important;
+        }
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+        .collapsible__full {
+            display: none !important;
+        }
+
+        .collapsible__middle {
+            display: block;
+        }
+
+        .collapsible__short {
+            display: none !important;
+        }
+
+        .collapsible__mobile-hide {
+            display: none !important;
+        }
+}
