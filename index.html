@@ -129,7 +129,7 @@
                     <div class="table__cell">
                         <div class="table__content" data-bind="text: departTime + '&#8211' + arriveTime"></div>
                     </div>
-                    <div class="table__cell">
+                    <div class="table__cell table__cell_state" data-bind="css: { 'table__cell_state_alert' : isAlert, 'table__cell_state_primary' : isPrimary}">
                         <div class="table__content" data-bind="text: status + ' ' + delayedToTime"></div>
                     </div>
                     <div class="table__cell  collapsible__full">
@@ -175,7 +175,7 @@
                     </div>
                     <div class="flight-details__row">
                         <span class="flight-details__title">статус</span>
-                        <span class="flight-details__value" data-bind="text: status + ' ' + delayedToTime "></span>
+                        <span class="flight-details__value flight-details__value_state" data-bind="text: status + ' ' + delayedToTime, css: { 'flight-details__value_state_alert' : isAlert, 'flight-details__value_state_primary' : isPrimary}"></span>
                     </div>
                     <div class="flight-details__row">
                         <span class="flight-details__title">примечание</span>
