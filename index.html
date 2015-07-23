@@ -129,7 +129,7 @@
                     <div class="table__cell">
                         <div class="table__content" data-bind="text: departTime + '&#8211' + arriveTime"></div>
                     </div>
-                    <div class="table__cell">
+                    <div class="table__cell table__cell_state" data-bind="css: { 'table__cell_state_alert' : isAlert, 'table__cell_state_primary' : isPrimary}">
                         <div class="table__content" data-bind="text: status + ' ' + delayedToTime"></div>
                     </div>
                     <div class="table__cell  collapsible__full">

@@ -10,8 +10,8 @@
     app.Flights.prototype.airportsShort = ["VKO, MOW", "OHR, CHI", "HTR, LON", "HND, TYO"];
     app.Flights.prototype.planesShort = ["B747", "A350", "SU27", "AN158"];
     app.Flights.prototype.about = ["#1445", "#1123", "#5370"];
-    app.Flights.prototype.statusArrive = ["Задерживается до ", "Регистрация", "Ожидание посадки", "Посадка закончена", "Вылетел", "Отменен"];
-    app.Flights.prototype.statusDepart = ["Задерживается до ", "По расписанию", "Летит", "Приземлился", "Отменен"];
+    app.Flights.prototype.statusDepart = ["Задерживается до ", "Регистрация", "Ожидание посадки", "Посадка закончена", "Вылетел", "Отменен"];
+    app.Flights.prototype.statusArrive = ["Задерживается до ", "По расписанию", "Летит", "Приземлился", "Отменен"];
 
     app.Flights.prototype.fetch = function (n) {
         var self = this,
@@ -28,6 +28,8 @@
             arriveTimeMinutes,
             delayedArriveTimeHours,
             delayedArriveTimeMinutes,
+            isAlert,
+            isPrimary,
             statusId,
             i,
             flights = [];
@@ -40,11 +42,13 @@
             planeId = app.getRandomInt(0, 3);
             airportId = app.getRandomInt(0, 3);
             typeId = app.getRandomInt(0, 1);
-            statusId = typeId ? app.getRandomInt(0, 5) : app.getRandomInt(0, 4);
-
+            statusId = typeId ? app.getRandomInt(0, 4) : app.getRandomInt(0, 5);
             departMinutes = app.getRandomInt(0, 1440);
             arriveMinutes = app.getRandomInt(0, 1440);
             delayedArriveMinutes = (app.getRandomInt(0, 1440) + app.getRandomInt(0, 360)) % 1440;
+
+            isAlert = (!typeId && (statusId == 0 || statusId == 5)) || (typeId && (statusId == 0 || statusId == 4));
+            isPrimary = (!typeId && (statusId == 4)) || (typeId && (statusId == 3));
             departTimeHours = ("0" + Math.floor(departMinutes / 60)).slice(-2);
             departTimeMinutes = ("0" + departMinutes % 60).slice(-2);
             arriveTimeHours = ("0" + Math.floor(arriveMinutes / 60)).slice(-2);
@@ -66,6 +70,8 @@
             flight.arriveTime = arriveTimeHours + ":" + arriveTimeMinutes;
             flight.departTime = departTimeHours + ":" + departTimeMinutes;
             flight.delayedToTime = statusId === 0 ? delayedArriveTimeHours + ":" + delayedArriveTimeMinutes : "";
+            flight.isAlert = isAlert;
+            flight.isPrimary = isPrimary;
 
             flights.push(flight);
         }

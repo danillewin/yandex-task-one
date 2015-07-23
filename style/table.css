@@ -51,9 +51,27 @@
             background-color: rgba(97,175,255,0.3);
         }
 
-        .table__row:hover .table__cell {
-            background-color: rgba(97,175,255,0.3);
-        }
+            .table__cell_state:after {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+
+                content: "";
+            }
+
+            .table__cell_state_alert:after {
+                background: rgba(255,102,102,0.6);
+            }
+
+            .table__cell_state_primary:after {
+                background: rgba(153,204,0,0.6);
+            }
+
+            .table__row:hover .table__cell {
+                background-color: rgba(97,175,255,0.3);
+            }
 
     .table__head-copy {
         position: fixed;
