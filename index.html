@@ -175,7 +175,7 @@
                     </div>
                     <div class="flight-details__row">
                         <span class="flight-details__title">статус</span>
-                        <span class="flight-details__value" data-bind="text: status + ' ' + delayedToTime "></span>
+                        <span class="flight-details__value flight-details__value_state" data-bind="text: status + ' ' + delayedToTime, css: { 'flight-details__value_state_alert' : isAlert, 'flight-details__value_state_primary' : isPrimary}"></span>
                     </div>
                     <div class="flight-details__row">
                         <span class="flight-details__title">примечание</span>
