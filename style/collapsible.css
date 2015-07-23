@@ -1,3 +1,5 @@
+/* ----------- Desktops ----------- */
+
 @media only screen
     and (min-width: 1280px)  {
 
@@ -70,28 +72,6 @@
 
 /* ----------- iPhone 4 and 4S ----------- */
 
-/* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-        .collapsible__full {
-            display: none !important;
-        }
-
-        .collapsible__middle {
-            display: none !important;
-        }
-
-        .collapsible__short {
-            display: block;
-        }
-
-        .collapsible__mobile-hide {
-            display: none !important;
-        }
-}
-
 /* Portrait */
 @media only screen
   and (min-device-width: 320px)
@@ -124,28 +104,6 @@
 }
 
 /* ----------- iPhone 5 and 5S ----------- */
-
-/* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-        .collapsible__full {
-            display: none !important;
-        }
-
-        .collapsible__middle {
-            display: none !important;
-        }
-
-        .collapsible__short {
-            display: block;
-        }
-
-        .collapsible__mobile-hide {
-            display: none !important;
-        }
-}
 
 /* Portrait */
 @media only screen
@@ -195,28 +153,6 @@
 
 /* ----------- iPhone 6 ----------- */
 
-/* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-        .collapsible__full {
-            display: none !important;
-        }
-
-        .collapsible__middle {
-            display: none !important;
-        }
-
-        .collapsible__short {
-            display: block;
-        }
-
-        .collapsible__mobile-hide {
-            display: none !important;
-        }
-}
-
 /* Portrait */
 @media only screen
   and (min-device-width: 375px)
@@ -265,28 +201,6 @@
 
 /* ----------- iPhone 6+ ----------- */
 
-/* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 414px)
-  and (max-device-width: 736px)
-  and (-webkit-min-device-pixel-ratio: 3) {
-        .collapsible__full {
-            display: none !important;
-        }
-
-        .collapsible__middle {
-            display: none !important;
-        }
-
-        .collapsible__short {
-            display: block;
-        }
-
-        .collapsible__mobile-hide {
-            display: none !important;
-        }
-}
-
 /* Portrait */
 @media only screen
   and (min-device-width: 414px)
@@ -326,6 +240,55 @@
 
         .collapsible__short {
             display: block;
+        }
+
+        .collapsible__mobile-hide {
+            display: none !important;
+        }
+}
+
+
+/*---------------------iPads----------------------*/
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1) {
+        .collapsible__full {
+            display: none !important;
+        }
+
+        .collapsible__middle {
+            display: block;
+        }
+
+        .collapsible__short {
+            display: none !important;
+        }
+
+        .collapsible__mobile-hide {
+            display: none !important;
+        }
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1) {
+        .collapsible__full {
+            display: none !important;
+        }
+
+        .collapsible__middle {
+            display: block;
+        }
+
+        .collapsible__short {
+            display: none !important;
         }
 
         .collapsible__mobile-hide {
