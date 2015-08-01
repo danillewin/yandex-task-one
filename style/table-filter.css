@@ -44,12 +44,14 @@
     padding: 6px 10px;
 
     cursor: pointer;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-transform: uppercase;
 
     color: #3399cc;
     border: 1px solid #3399cc;
     background-color: #ffffff;
+
+    font-size: 0.9em;
 }
 
 .table-filter__check:checked + .table-filter__btn {

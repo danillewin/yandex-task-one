@@ -11,7 +11,7 @@
     text-align: left;
 
     border-collapse: collapse;
-    background-image: url(images/table-back.png); /*В комментариях к pure css решению этот ужас разобран подробно :( */
+    background-image: url(images/table-back.png);
     background-position: 0 -11px;
 }
 
@@ -37,7 +37,7 @@
         border: 1px solid #dddddd;
     }
 
-        .table__cell:hover::after {
+        .table__cell:hover:after {
             position: absolute;
             z-index: 2;
             top: -5000px;
@@ -97,13 +97,15 @@
         text-align: center;
         vertical-align: middle;
         white-space: nowrap;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         text-transform: uppercase;
 
         color: #ffffff;
         border-top: 1px solid #3399cc;
         border-bottom: 1px solid #3399cc;
         background: #3399cc;
+
+        font-size: 0.9em;
     }
 
         .table__head-cell:last-child {

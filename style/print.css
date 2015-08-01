@@ -1,40 +1,61 @@
+.collapsible__print {
+    display: none;
+}
+
 @media print {
-        .collapsible__full {
-            display: block;
-        }
 
-        .collapsible__middle {
-            display: none !important;
-        }
+    body {
+        width: 100%;
 
-        .collapsible__short {
-            display: none !important;
-        }
+        font-size: 12pt;
+    }
 
-        label,
-        input {
-            display: none !important;
-        }
+    .collapsible__full {
+        display: block;
+    }
 
-        .table__head-cell {
-            padding: 0 10px;
+    .collapsible__print {
+        display: block;
+    }
 
-            font-size: 14px;
-        }
+    .collapsible__middle {
+        display: none !important;
+    }
 
-        .table__cell {
-            border-bottom: 1px solid #666666;
-        }
+    .collapsible__short {
+        display: none !important;
+    }
 
-        .modal {
-            width: 1500px;
-            height: 1500px;
-        }
+    label,
+    input,
+    i,
+    img {
+        display: none !important;
+    }
 
-        .modal__body {
-            width: 1000px;
-            margin: 0 250px;
+    .table {
+        border: solid #000000 !important;
+        border-width: 1px 0 0 1px !important;
+    }
 
-            font-size: 26px;
-        }
+    .table__head-copy {
+        display: none !important;
+    }
+
+    .table__head-cell,
+    .table__cell {
+        padding: 5px;
+
+        color: #000000 !important;
+        border: solid #000000 !important;
+        border-width: 0 1px 1px 0 !important;
+    }
+
+    .table__cell:after {
+        display: none !important;
+    }
+
+    .table__row:hover .table__cell {
+        background-color: initial !important;
+    }
 }
