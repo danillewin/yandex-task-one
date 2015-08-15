@@ -29,6 +29,4 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi tempora nulla, a
 
 > ... если вам удастся реализовать табло без JavaScript.
 
-Поэтому, прилагаю версию [с использованием JS](https://github.com/danillewin/yandex-task-one-js).
-
 Спасибо за внимание.
